@@ -88,7 +88,7 @@ barplot(charge_p[, "Yes"],
 churn_prop <- mean(df$Churn == "Yes")
 n <- 7043
 
-#բինոմական բաշխման համար margin of error ենք հաշվում
+#margin of error ենք հաշվում
 mor <- qnorm(0.975) * sqrt((churn_prop * (1 - churn_prop)) / n)  
 #Սա լինելու է մեր միջակայքը 
 l <- churn_prop - mor
